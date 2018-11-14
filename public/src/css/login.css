@@ -1,0 +1,72 @@
+@font-face {
+	font-family: webisfree;
+	src: url('../fonts/AGENTORANGE.TTF');
+  }
+.mainDiv{
+	width:100%;
+	height:100%;
+	display:flex;
+	text-align:center;
+	margin:auto;
+	align-content: center;
+	justify-content: center;
+}
+.mainDiv:before{
+	content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: .3;
+	
+	background-repeat: no-repeat;
+	background-image:url("../images/bamboo_index.jpg");
+	background-position: left;
+	background-size:cover;
+
+	
+  -webkit-filter: blur(5px);
+  -moz-filter: blur(5px);
+  -o-filter: blur(5px);
+  -ms-filter: blur(5px);
+  filter: blur(5px);	
+}
+.login_container{
+	width:400px;
+	height:400px;
+	bottom:50px;
+	display: -webkit-flexbox;
+    display: -ms-flexbox;
+	display: -webkit-flex;
+	display:block;
+	position: relative;
+	margin: auto;
+
+	background: rgb(213,252,209);	
+	border-radius: 0.3em;
+
+}
+#mainHeading{
+	margin:0;
+	font-size:15px;
+	font-family: webisfree;
+	position: relative;
+	display: block;
+
+	background-color: rgb(27,188,155);
+	border-radius: 0.25em;
+	color: #fff;
+	padding: 10px;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+#firebaseui-auth-container{
+	position: absolute;
+	width:100%;
+    top: 50%;
+    left: 50%;
+	transform: translateX(-50%) translateY(-50%);
+}

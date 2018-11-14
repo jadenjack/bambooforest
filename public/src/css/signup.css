@@ -1,0 +1,26 @@
+@font-face {
+	font-family: webisfree;
+	src: url('../fonts/AGENTORANGE.TTF');
+  }
+.mainDiv{
+	display:block;
+	text-align:center;
+	margin:auto;
+}
+.mainDiv:before{
+	content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: .3;
+	
+	width:100%;
+	height:100%;
+	background-repeat: no-repeat;
+	background-image:url("../images/bamboo_index.jpg");
+	background-position: left;
+	background-size:cover;
+}

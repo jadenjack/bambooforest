@@ -1,0 +1,54 @@
+<html>
+
+<head>
+	<title>대나무숲</title>
+
+	<!-- firebase & jquery -->
+		<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+		<!-- include only the Firebase features as you need -->
+		<script defer src="https://www.gstatic.com/firebasejs/5.0.2/firebase.js"></script>
+		<script defer src="https://www.gstatic.com/firebasejs/5.0.2/firebase-app.js"></script>
+		<script defer src="https://www.gstatic.com/firebasejs/5.0.2/firebase-auth.js"></script>
+		<script defer src="https://www.gstatic.com/firebasejs/5.0.2/firebase-database.js"></script>
+		<script defer src="https://www.gstatic.com/firebasejs/5.0.2/firebase-messaging.js"></script>
+		<script defer src="https://www.gstatic.com/firebasejs/5.0.2/firebase-storage.js"></script>
+		<script src="https://cdn.firebase.com/libs/firebaseui/3.0.0/firebaseui.js"></script>
+    	<link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/3.0.0/firebaseui.css" />
+		<!-- initialize the SDK after all desired features are loaded -->
+		<script defer src="./src/js/firebase_init.js"></script>
+	<!-- firebase & jquery -->
+	<script src="./src/js/login.js"></script>
+	<link rel="stylesheet" type="text/css" href="./src/css/login.css">
+</head>
+
+<body>
+	<div class="mainDiv">
+
+		
+		
+		<div class="login_container">
+			<!--
+			<form id="login_form" name="login" onsubmit="return loginUser()">
+				email :
+				<input id="input_email" name="email" type="text" placeholder="이메일을 입력하세요" />
+				<br> password :
+				<input id="input_password" name="password" type="password" placeholder="비밀번호를 입력하세요" />
+				<br>
+				<input id="login_submit" name="submit" type="submit" value="로그인" onclick="document.getElementById('login').submit();" />
+				<br>
+			</form>
+			-->
+			<!--
+			<button id="logout" type="button">로그아웃</button>
+			<a href="./signup.html">회원가입</a>
+			-->
+			<h1 id="mainHeading" class="center-of-page">BamBoo Forest<br>Sign In</h1>
+			<div id="firebaseui-auth-container"></div>
+		</div>
+	</div>
+	
+</body>
+
+
+
+</html>

@@ -1,0 +1,73 @@
+* {
+	font-family: 'The Girl Next Door', cursive, bold;
+	font-weight: bold;
+}
+.mainDiv{
+	background-image:url("../images/howtouse.jpg");
+	width:100%;
+	height: 100%;
+	background-size:100% 100%;
+	background-repeat: no-repeat;
+	position: absolute;
+}
+.mainDiv:before{
+	content: "";
+    z-index: -1;
+    opacity: 1.0;
+}
+
+.content-wrapper{
+	width:600px;
+	height:100%;
+	position:relative;
+	top:0;
+	bottom:0;
+	left:0;
+	right:0;
+	margin:auto;
+	margin-top:150px;
+	text-align:center;
+}
+
+.subtitle{
+	position: relative;
+	font-size:30px;
+	text-align:left;
+	padding-left:45px;
+	padding-right:15px;
+	
+}
+
+.maintitle{
+	font-size:50px;
+	text-align:center;
+	padding-left:15px;
+	padding-right:15px;
+	
+	position:relative;
+	display: block;
+	padding-bottom:20px;
+}
+
+.content{
+	font-size:35px;
+	position:relative;
+	top:0;
+	bottom:0;
+	left:0;
+	right:0;
+	margin:auto;
+	text-align:center;
+	display: none;
+}
+
+.lastline{
+	padding-top:10px;
+	padding-bottom:10px;
+	font-size:40px;	
+}
+
+input[type=submit] {
+	width: 200px;  height: 50px;
+	font-size:20px;
+}

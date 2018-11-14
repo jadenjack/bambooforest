@@ -1,0 +1,369 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Song Myung', serif;
+    font-weight: bold;
+}
+
+/* Add a gray background color with some padding */
+body {
+    font-family: Arial;
+    background: #f1f1f1;
+}   
+
+.mainDiv{
+	display:block;
+	text-align:center;
+	margin:auto;
+}
+.mainDiv:before{
+	content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: .3;
+	
+	width:100%;
+	height:100%;
+	background-repeat: no-repeat;
+	background-image:url("../images/bamboo_index.jpg");
+	background-position: left;
+    background-size:cover;
+    background-attachment: fixed;
+}
+
+/* Header/Blog Title */
+
+.header {
+    height:70px;
+    font-size: 20px;
+    text-align: center;
+    
+    margin:auto;
+}
+
+.header h2{
+    display:inline;
+}
+.header-left{
+    width:20%;
+    float:left;
+    height:100%;
+    background-color:white;
+}
+.header-right{
+    width: 79%;
+    height: 100%;
+    float:left;
+    text-align:left;
+    margin-left:10px;
+    padding-left:10px;
+    background-color:white;
+    display: flex;
+    justify-content: center;    
+    padding-left: 20px;
+}
+.keyword-title-form{
+    
+    width:80%;
+    
+    border:0;
+    vertical-align: middle;
+}
+#keyword-title{
+    width:100%;
+    height:100%;
+    font-size:20px;
+    padding:0;
+    border:0;
+}
+#new-post{
+    width:20%;
+    border:1px solid;
+    border-color:green;
+    border-left:4px solid;
+    border-left-color:green;
+    background-color:greenyellow;
+}
+
+/* Create two unequal columns that floats next to each other */
+
+/* Right column */
+.left-side-bar {
+    position: relative;
+    float: left;
+    width: 20%;
+    padding-top:10px
+}
+
+/* Left column */
+.rightside {
+    
+    overflow: hidden;
+    position: relative;
+    height: 90%;
+    min-height:500px;
+    width:79%;
+    padding-left:10px;
+}
+
+
+
+/* Add a card effect for articles */
+.card {
+    background-color: white;
+    padding: 10px;
+    margin-bottom: 10px;
+    
+}
+
+.contents{
+    background-color:white;
+    height: 30%;
+    left:0;
+    top:0;
+    margin-top:10px;
+}
+
+.contents > h2{
+    margin:0;
+    height:50px;
+    background-color:rgb(226, 223, 223);
+    text-align:left;
+    align-items: center;
+    padding-left:10px;
+    display: flex;
+
+    border-bottom:2px grey solid;
+}
+
+.contents >h5{
+    margin:0;
+    height:20px;
+    background-color:rgb(241, 232, 232);
+    text-align:left;
+    align-items: center;
+    padding-left:10px;
+    display: flex;
+
+    border-bottom:2px grey solid;
+}
+
+.contents >p{
+    margin:0;
+    padding:20px;
+    text-align:left;
+    left:0;
+    top:0;
+}
+
+.card-profile{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    height: 30vh;
+    text-align: center;
+    position:relative;
+    
+	border:4px solid;
+	border-color:green; 
+}
+
+.profile-info-wrapper{
+    height: 50%;
+    width:auto;
+    display: block;
+    border:3px solid;
+    border-color:greenyellow;
+    border-bottom:1.5px;
+    border-bottom-color:greenyellow;
+}
+
+#user_id{
+    height: 50%;
+    position: relative;
+    vertical-align: middle;
+    margin:auto;
+    margin-top:15px;
+}
+.user_edit-profile{
+    height: 50%;
+    position: relative;
+    vertical-align: middle;
+    margin:auto;
+
+}
+.profile-option-wrapper{
+    height: 50%;
+    width:auto;
+    display:block;
+    border:3px solid;
+    border-color:greenyellow;
+}
+.profile-option{
+    display:inline;
+}
+.popular-post{
+}
+.popular-keyword{
+    background-color: rgb(152, 247, 129);
+    width: 100%;
+    padding: 20px;
+}
+.contact-us{
+}
+
+.favicon-facebook{
+    height:25px;
+    width:25px;
+    background-color:white;
+}
+
+.card-profile-image{
+    width:50%;
+    height: 100%;
+    left:0;
+    top:0;
+    float:left;
+}
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Footer */
+.footer {
+    padding: 20px;
+    text-align: center;
+    background: #ddd;
+    margin-top: 20px;
+}
+
+.border-tilewrapper{
+	border:4px solid;
+	border-color:green;
+}
+.border-tiles{
+	border:3px solid;
+	border-color:greenyellow;
+}
+
+/* DIM css Start */
+.pop-layer .pop-container {
+  }
+  .pop-layer p.ctxt {
+    color: #666;
+    line-height: 25px;
+  }
+  
+  .pop-layer .btn-r {
+    width: 100%;
+    padding:5px;
+    border-top: 1px solid #DDD;
+    text-align: right;
+  }
+  
+  .pop-layer {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 700px;
+    height: 500px;
+    background-color: #fff;
+    border: 5px solid #3571B5;
+    z-index: 10;
+  }
+  
+  .dim-subcontainer{
+      border:2px solid;
+      border-color:#3f5a9d;
+  }
+
+  .title-container{
+    display: table;
+      height:10%;
+      float:left;
+      width:100%;
+  }
+
+#new-post-title-header{
+    width:80px;
+    display: table-cell;
+    height:100%;
+    text-align: center;
+}
+
+#new-post-title{
+    width: 100%;
+    height: 100%;
+    display: table-cell;
+    resize:none;
+    vertical-align: middle;
+    font-size:20px;
+  }
+
+  #new-post-content{
+      position: relative;;
+      overflow: hidden;
+      width:100%;
+      height:69%;
+      left:0;
+      top:0;
+      right:0;
+      resize: none;
+      font-size:20px;
+  }
+
+  #new-post-button{
+      position: relative;
+      overflow: hidden;
+      width:100%;
+      height:13%;
+  }
+  
+  .dim-layer {
+    display: none;
+    position: fixed;
+    _position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+  }
+  
+  .dim-layer .dimBg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    opacity: .5;
+    filter: alpha(opacity=50);
+  }
+  
+  .dim-layer .pop-layer {
+    display: block;
+  }
+  
+  a.btn-layerClose {
+    display: inline-block;
+    height: 25px;
+    padding: 0 14px 0;
+    border: 1px solid #304a8a;
+    background-color: #3f5a9d;
+    font-size: 13px;
+    color: #fff;
+    line-height: 25px;
+  }
+  
+  a.btn-layerClose:hover {
+    border: 1px solid #091940;
+    background-color: #1f326a;
+    color: #fff;
+  }
+/* DIM css END

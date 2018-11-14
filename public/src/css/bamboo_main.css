@@ -1,0 +1,134 @@
+@font-face {
+	font-family: webisfree;
+	src: url('../fonts/AGENTORANGE.TTF');
+  }
+  #mainHeading{
+	padding-top:82px;
+	font-size:30px;
+	font-family: webisfree;
+  }
+.mainDiv{
+	display:block;
+	text-align:center;
+	margin:auto;
+}
+.mainDiv:before{
+	content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: .3;
+	
+	width:100%;
+	height:100%;
+	background-repeat: no-repeat;
+	background-image:url("../images/bamboo_index.jpg");
+	background-position: left;
+	background-size:cover;
+}
+
+.center-of-page{
+	position:relative;
+	top:0;
+	bottom:0;
+	left:0;
+	right:0;
+	margin:auto;
+}
+div.HowToUseDiv{
+	width:calc(154px * 4 + 12px * 3);
+	
+}
+.HowToUse{
+	margin-top:4x0px;
+	width:calc(154px * 4 + 12px * 3);
+}
+
+.howtouse-button{
+	height:50px;
+	width:100px;
+	position: absolute;
+	background-image:url("../images/what-is-bamboo-forest.png");
+	background-size:100% 100%;
+	z-index: 1;
+	left:0px;
+	
+}
+
+.login{
+	height:50px;
+	width:200px;
+	font-size:27px;
+	font-family: webisfree;
+	right:0px;
+	position: absolute;
+	background-color:rgba(255,255,255,0.9);
+	color:rgb(132,211,132);
+	border:2px solid;
+	border-radius: 5px;
+	border-top-color: rgba(135,135,135,0.5);
+	border-left-color:rgba(135,135,135,0.5);
+	border-right-color: rgba(78,78,78,0.5);
+	border-bottom-color:rgba(78,78,78,0.5);
+	z-index: 1;
+	
+}
+
+
+input#keyword{
+	top:70px;
+	position:relative;
+	width:610px;
+	height:45px;
+}
+
+#keyword{
+	width:332px;
+	height:30px;
+	padding-left:8px;
+	padding-right:8px;
+	word-wrap: break-word;
+}
+
+#hotTopicDiv{
+	height: 284px;
+	width:100%;
+	position: relative;
+	top:100px;
+}
+
+#hotTopicTileWrapper{
+	/* tile width : 154, padding 4px */
+	width:600px;
+	position: relative;
+	text-align: center;
+	margin:auto;
+}
+
+.hotTopicTileParent{
+	display: table;
+}
+.hotTopicTile{
+	height:128px;
+	width: 154px;
+	display:table-cell;
+	vertical-align: middle;
+	background-color:rgb(250,250,250);
+	box-sizing:border-box;
+	font-family:webisfree;
+	font-size:25px;
+	position:relative;
+	text-align: center;
+}
+
+.border-tilewrapper{
+	border:4px solid;
+	border-color:green;
+}
+.border-tiles{
+	border:3px solid;
+	border-color:greenyellow;
+}

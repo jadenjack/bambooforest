@@ -1,0 +1,40 @@
+<html>
+
+<head>
+	<title>대나무숲</title>
+	<link rel="stylesheet" type="text/css" href="./src/css/howtouse.css">
+	<link href="https://fonts.googleapis.com/css?family=The+Girl+Next+Door" rel="stylesheet">
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+</head>
+
+<body>
+	<script>
+		$(document).ready(function(){
+			var fadeIn = function(){
+				$('.content:hidden:first').fadeIn("slow");
+				setTimeout(fadeIn,1000);
+			}
+			
+			fadeIn();
+		})
+	</script>
+	<div class="mainDiv">
+		<div class="content-wrapper">
+			<p class="subtitle">모두가 자유롭게 말할 수 있는 공간</p>
+			<span class="maintitle">여기는 대나무숲입니다.</span>
+			<br>
+			<p class="content">가끔씩 하소연하고 싶을때,</p>
+			<p class="content">마음껏 소리지르고 싶을때,</p>
+			<p class="content">주변에 말하기는 어려울때,</p>
+			<p class="content lastline">대나무들에게 이야기 해보세요.</p>
+			<form action="./index.html">
+				<input type="submit" value="메인 페이지로"/>
+			</form>
+		</div>
+		
+	</div>
+</body>
+
+
+
+</html>

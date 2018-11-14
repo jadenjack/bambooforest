@@ -1,0 +1,44 @@
+<html>
+
+<head>
+	<title>대나무숲</title>
+
+	<!-- firebase & jquery -->
+		<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+		<!-- include only the Firebase features as you need -->
+		<script defer src="https://www.gstatic.com/firebasejs/5.0.2/firebase.js"></script>
+		<script defer src="https://www.gstatic.com/firebasejs/5.0.2/firebase-app.js"></script>
+		<script defer src="https://www.gstatic.com/firebasejs/5.0.2/firebase-auth.js"></script>
+		<script defer src="https://www.gstatic.com/firebasejs/5.0.2/firebase-database.js"></script>
+		<script defer src="https://www.gstatic.com/firebasejs/5.0.2/firebase-messaging.js"></script>
+		<script defer src="https://www.gstatic.com/firebasejs/5.0.2/firebase-storage.js"></script>
+		<!-- initialize the SDK after all desired features are loaded -->
+		<script defer src="./src/js/firebase_init.js"></script>
+	<!-- firebase & jquery -->
+    <script src="./src/js/signup.js"></script>
+
+	<link rel="stylesheet" type="text/css" href="./src/css/signup.css">
+</head>
+
+<body>
+	<div class="mainDiv">
+		
+		<form id="signup_form" onsubmit="submit_signup()" method="POST">
+			email : <input id="input_email" name="email" type="text" placeholder="이메일을 입력하세요"/>
+			<br>
+			password : <input id="input_password" name="password" type="password" placeholder="비밀번호를 입력하세요"/>
+			<br>
+			nickname : <input id="input_nickname" name="nickname" type="text" placeholder="닉네임을 입력하세요"/>
+			<br>
+			<button id="signup_submit" type="button">회원가입</button>
+			<br>
+			<br>
+		</form>
+
+        
+	</div>
+</body>
+
+
+
+</html>

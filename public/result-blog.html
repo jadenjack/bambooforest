@@ -1,0 +1,132 @@
+<html>
+
+<head>
+    <title>대나무숲</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="./src/css/result-blog.css">
+    <link href="https://fonts.googleapis.com/css?family=Song+Myung" rel="stylesheet">
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <!-- include only the Firebase features as you need -->
+    <script defer src="https://www.gstatic.com/firebasejs/5.0.2/firebase.js"></script>
+    <script defer src="https://www.gstatic.com/firebasejs/5.0.2/firebase-app.js"></script>
+    <script defer src="https://www.gstatic.com/firebasejs/5.0.2/firebase-auth.js"></script>
+    <script defer src="https://www.gstatic.com/firebasejs/5.0.2/firebase-database.js"></script>
+    <script defer src="https://www.gstatic.com/firebasejs/5.0.2/firebase-messaging.js"></script>
+	<script defer src="https://www.gstatic.com/firebasejs/5.0.2/firebase-storage.js"></script>
+	<script src="https://cdn.firebase.com/libs/firebaseui/3.0.0/firebaseui.js"></script>
+    <!-- initialize the SDK after all desired features are loaded -->
+	  <script defer src="./src/js/firebase_init.js"></script>
+
+	<script src="./src/js/result_blog.js"></script>
+
+</head>
+
+<body>
+    <div class="mainDiv">
+
+        <div>
+            <div class="header">
+                <div class="header-left border-tilewrapper">
+                        <a href="./index.html">
+                            <img src="./src/images/gotohome.png" class="gotohome-logo" height="60px">
+                        </a>
+                </div>
+                <div class="header-right border-tilewrapper">
+                    <form action="./result-blog.html" class="keyword-title-form" method="GET">
+                        <input id="keyword-title" name="keyword" placeholder="다른 키워드도 입력해보세요."></input>
+                    </form>
+                    <button id="new-post">새 글 쓰기</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="left-side-bar">
+                <div class="card card-profile">
+                    <div class="profile-info-wrapper">
+                        <img src="./src/images/panda_profile.jpg" alt="profile" class="card-profile-image">
+                        <h4 id="user_id"></h4>
+                    </div>
+                    <div class="profile-option-wrapper">
+                        <p>내 글 보기</p>
+                        <a href="#">
+                            <i class="profile-option"></i>
+                        </a>
+                        <a href="#">
+                            <i class="profile-option"></i>
+                        </a>
+                        <a href="#">
+                            <i class="profile-option"></i>
+                        </a>
+                        <a href="#">
+                            <i class="profile-option"></i>
+                        </a>
+                        <p>
+                            <button>Contact</button>
+                        </p>
+                    </div>
+                </div>
+                <div class="card popular-post border-tilewrapper">
+                    <h3>다른 주제</h3>
+                    <div class="popular-keyword border-tiles">키워드1</div>
+                    <br>
+                    <div class="popular-keyword border-tiles">키워드2</div>
+                    <br>
+                    <div class="popular-keyword border-tiles">키워드3</div>
+                </div>
+                <div class="card contact-us border-tilewrapper">
+                    <h3>Contact Us</h3>
+                    <a href="https://www.facebook.com/jij5379" target="_blank">
+                        <img src="./src/images/facebook.png" class="favicon-facebook" />
+                    </a>
+                </div>
+            </div>
+            <div class="rightside">
+                <div class="contents border-tilewrapper">
+                    <h2 class="contents-title"></h2>
+                    <h5 class="contents-date"></h5>
+                    <p class="contents-content"></p>
+                </div>
+                <div class="contents border-tilewrapper">
+                        <h2 class="contents-title"></h2>
+                        <h5 class="contents-date"></h5>
+                        <p class="contents-content"></p>
+                </div>
+                <div class="contents border-tilewrapper">
+                        <h2 class="contents-title"></h2>
+                        <h5 class="contents-date"></h5>
+                        <p class="contents-content"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+    <div class="dim-layer">
+        <div class="dimBg"></div>
+        <div id="dimmed-layer" class="pop-layer">
+            <div class="btn-r">
+                <!--닫기버튼-->
+                <a href="#" class="btn-layerClose">Close</a>
+            </div>
+            
+            <div class="pop-container">
+                <div class="pop-conts">
+                    <!--content //-->
+                    <div class="title-container dim-subcontainer" >
+                        <h2 id="new-post-title-header">제목</h2>
+                        <textarea id="new-post-title"></textarea>
+                    </div>
+                        <textarea id="new-post-content"></textarea>
+                        <button id="new-post-button">작성 완료</button>
+                    <!--// content-->
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+
+
+</html>

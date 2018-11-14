@@ -1,0 +1,63 @@
+<html>
+
+<head>
+  <title>대나무숲</title>
+  
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <!-- include only the Firebase features as you need -->
+    <script defer src="https://www.gstatic.com/firebasejs/5.0.2/firebase.js"></script>
+    <script defer src="https://www.gstatic.com/firebasejs/5.0.2/firebase-app.js"></script>
+    <script defer src="https://www.gstatic.com/firebasejs/5.0.2/firebase-auth.js"></script>
+    <script defer src="https://www.gstatic.com/firebasejs/5.0.2/firebase-database.js"></script>
+    <script defer src="https://www.gstatic.com/firebasejs/5.0.2/firebase-messaging.js"></script>
+	<script defer src="https://www.gstatic.com/firebasejs/5.0.2/firebase-storage.js"></script>
+	<script src="https://cdn.firebase.com/libs/firebaseui/3.0.0/firebaseui.js"></script>
+    <!-- initialize the SDK after all desired features are loaded -->
+	  <script defer src="./src/js/firebase_init.js"></script>
+
+	<link rel="stylesheet" type="text/css" href="./src/css/bamboo_main.css">
+	<script src="./src/js/index.js"></script>
+</head>
+
+<body>
+	<div class="mainDiv">
+		<div class="HowToUse center-of-page">
+			<a class="howtouse-button" href="./howtouse.html" target="_self"></a>
+				<div>
+					<!--
+					<a class="login" href="./login.html" target="_self"></a>
+					-->
+ 					<button class="login"></button>
+				</div>
+				<h1 id="mainHeading" class="center-of-page">BamBoo Forest</h1>
+		</div>
+
+		<div class="hotTopicFormDiv center-of-page">
+			<form action="./result-blog.html" class="actionClass" method="GET">
+				<input id="keyword" class="border-tilewrapper" name="keyword" placeholder="키워드를 입력하세요."></input>
+			</form>
+		</div>
+
+		<div id="hotTopicDiv">
+			<div id="hotTopicTileWrapper" class="border-tilewrapper	center-of-page">
+				<div class="hotTopicTileParent">
+					<a class="hotTopicTile border-tiles"></a>
+					<a class="hotTopicTile border-tiles"></a>
+					<a class="hotTopicTile border-tiles"></a>
+					<a class="hotTopicTile border-tiles"></a>
+				</div>
+				<div class="hotTopicTileParent">
+					<a class="hotTopicTile border-tiles"></a>
+					<a class="hotTopicTile border-tiles"></a>
+					<a class="hotTopicTile border-tiles"></a>
+					<a class="hotTopicTile border-tiles"></a>
+				</div>
+			</div>
+		</div>
+
+	</div>
+</body>
+
+
+
+</html>
